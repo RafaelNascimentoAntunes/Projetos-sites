@@ -1,0 +1,91 @@
+@import url('./carossel.css');
+
+body {
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.imgprincipal {
+    margin-top: 50px;
+    background-color: rgb(33, 37, 41);
+    padding-left: 41%;
+}
+
+/*Barra de navegação*/
+#logo{
+    display: flex;
+    margin-left: 25px;
+    font-size: large;
+    color: white;
+    float: left;
+}
+
+#titulo{
+    height: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#atual{
+    color: white;
+}
+
+
+#navbar{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    background-color:rgb(33, 37, 41);
+    width: 100%;
+    height: 60px;
+}
+
+#navbar2{
+    z-index: 1;
+    display: absolute;
+    background-color:rgb(33, 37, 41);
+    width: 100%;
+    height: 60px;
+}
+
+.barra{
+    float: right;
+    margin-right: 20px;
+}
+
+a:link{
+    color: rgb(107, 104, 104);  
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.4s;
+}
+
+a:hover{
+    font-size: 20px;
+    position: inherit;
+}
+
+a:visited{
+    color: rgb(rgb(68, 68, 68));
+}
+
+/*Rodape*/
+footer{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(33, 37, 41);
+}

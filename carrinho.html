@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Minha Loja</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Navbar (igual às outras páginas) -->
+    <div id="navbar">
+      <a href="#" id="logo">Stop Bikes</a>
+      <ul>
+        <li type="none">
+            <a href="#" class="barra" id="atual">Carrinho</a>
+            <a href="produtos.html" class="barra">Produtos</a>
+            <a href="index.html" class="barra" >Início</a>
+        </li>
+       </ul>
+    </div>
+
+    <!-- Detalhes do Carrinho -->
+    <div class="container mt-5">
+        <h2 class="text-center">Seu Carrinho</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="carrinho-itens">
+                    <!-- Itens do carrinho serão inseridos aqui via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <div class="text-end">
+            <h4>Total: R$ <span id="total-carrinho">0.00</span></h4>
+            <a href="checkout.html" class="btn btn-success">Finalizar Compra</a>
+        </div>
+    </div>
+
+    <!-- Footer (igual às outras páginas) -->
+    <footer>
+        <p>Contato</p>
+        <br><br><br>
+       <p>@ Todos direitos reservados Stop Bikes</p>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>

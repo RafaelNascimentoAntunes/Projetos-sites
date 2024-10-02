@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Minha Loja</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Navbar (igual às outras páginas) -->
+    <div id="navbar">
+      <a href="#" id="logo">Stop Bikes</a>
+      <ul>
+        <li type="none">
+            <a href="carrinho.html" class="barra">Carrinho</a>
+            <a href="produtos.html" class="barra">Produtos</a>
+            <a href="index.html" class="barra">Início</a>
+        </li>
+       </ul>
+    </div>
+
+    <!-- Formulário de Checkout -->
+    <div class="container mt-5">
+        <h2 class="text-center">Finalizar Compra</h2>
+        <form id="form-checkout">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="endereco" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="endereco" required>
+            </div>
+            <div class="mb-3">
+                <label for="cartao" class="form-label">Número do Cartão</label>
+                <input type="text" class="form-control" id="cartao" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Pagar</button>
+        </form>
+    </div>
+
+    <!-- Footer (igual às outras páginas) -->
+    <footer>
+        <p>Contato</p>
+        <br><br><br>
+       <p>@ Todos direitos reservados Stop Bikes</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

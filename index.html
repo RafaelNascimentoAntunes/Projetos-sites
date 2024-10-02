@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Bikes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar2">
+        <div id="titulo">
+            <ul>
+                <li type="none">
+                    <a href="index.html" class="barra" id="logo">Stop Bikes</a>
+                    <a href="carrinho.html" class="barra">Carrinho</a>
+                    <a href="produtos.html" class="barra">Produtos</a>
+                    <a href="index.html" class="barra" id="atual">Início</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="imgprincipal" >
+        <img src="./img/icone.png" alt="Stop Bikes">
+    </div>
+
+    <div class="products">
+        <div class="product-item"><img src="./img/Bike1.png" ></div>
+        <div class="product-item"><img src="./img/Bike2.png" ></div>
+        <div class="product-item"><img src="./img/Bike1.png" ></div>
+        <div class="product-item"><img src="./img/Bike2.png" ></div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Contato</p>
+        <br><br><br>
+       <p>@ Todos direitos reservados Stop Bikes</p>
+    </footer>
+
+
+    <script>
+        // Efeito de fade in ao rolar a página
+        const productItems = document.querySelectorAll('.product-item');
+
+        function checkPosition() {
+            const windowHeight = window.innerHeight;
+            productItems.forEach(item => {
+                const itemTop = item.getBoundingClientRect().top;
+                if (itemTop < windowHeight - 50) {
+                    item.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkPosition);
+        checkPosition(); // Para a primeira carga da página
+    </script>
+</body>
+</html>
